@@ -1,0 +1,59 @@
+<mvc:View controllerName="com.test.cvamenares.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox class="sapUiMediumMargin" alignItems="Center">
+                <!-- Panel Resumen -->
+                <Panel id="infoPanel_resumen" width="600px" headerText="Resumen" class="sapUiSmallMarginBottom">
+                    <Text text="{/resumen}" class="sapUiSmallMargin"/>
+                </Panel>
+
+                <!-- Tiles con GenericTile -->
+                <HBox justifyContent="Center" wrap="Wrap" class="sapUiSmallMarginBottom">
+                    <GenericTile header="Experiencia" subheader="Trayectoria profesional"
+                        frameType="OneByOne" press=".onBotonPress" data:key="experiencia"
+                        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+                        class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                        <TileContent>
+                            <ImageContent src="sap-icon://activity-individual"/>
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile header="Habilidades" subheader="Stack tecnológico"
+                        frameType="OneByOne" press=".onBotonPress" data:key="habilidades"
+                        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+                        class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                        <TileContent>
+                            <ImageContent src="sap-icon://learning-assistant"/>
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile header="Educación" subheader="Formación académica"
+                        frameType="OneByOne" press=".onBotonPress" data:key="educacion"
+                        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+                        class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+                        <TileContent>
+                            <ImageContent src="sap-icon://education"/>
+                        </TileContent>
+                    </GenericTile>
+
+                    <GenericTile header="Contacto" subheader="Información de contacto"
+                        frameType="OneByOne" press=".onBotonPress" data:key="contacto"
+                        xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+                        class="sapUiSmallMarginBottom">
+                        <TileContent>
+                            <ImageContent src="sap-icon://contacts"/>
+                        </TileContent>
+                    </GenericTile>
+                </HBox>
+
+                <!-- Panel de contenido -->
+                <Panel id="infoPanel" width="600px" headerText="{/titulo}" class="sapUiSmallMarginTop">
+                    <Text text="{/contenido}" class="sapUiSmallMargin"/>
+                </Panel>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

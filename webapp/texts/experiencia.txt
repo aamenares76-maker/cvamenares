@@ -1,0 +1,2 @@
+Experiencia en entornos S/4HANA, con fuerte enfoque en integraciones SAP mediante OData, APIs REST, IDoc, RFC y Proxy, además de desarrollo backend para aplicaciones SAP Fiori utilizando CDS Views y OData Services.
+Experiencia funcional en módulos MM, SD, FI, CO, FICA, HCM, IS-U, CRM, BW, PM, QM, SRM, entre otros.
