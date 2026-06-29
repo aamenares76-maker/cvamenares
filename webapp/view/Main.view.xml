@@ -16,7 +16,7 @@
                     <!-- Fila 1: 2 tiles -->
                     <HBox justifyContent="Start" wrap="Wrap" class="sapUiSmallMarginBottom">
                         <GenericTile header="Resumen Profesional" subheader="Resumen"
-                            frameType="OneByOne" press=".onBotonPress" data:key="res_prof"
+                            frameType="TwoByHalf" press=".onBotonPress" data:key="res_prof"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
                             <TileContent>
@@ -25,7 +25,7 @@
                         </GenericTile>
 
                         <GenericTile header="FORTALEZAS" subheader=""
-                            frameType="OneByOne" press=".onBotonPress" data:key="habilidades"
+                            frameType="TwoByHalf" press=".onBotonPress" data:key="habilidades"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginBottom">
                             <TileContent>
@@ -37,7 +37,7 @@
                     <!-- Fila 2: 3 tiles -->
                     <HBox justifyContent="Start" wrap="Wrap" class="sapUiSmallMarginBottom">
                         <GenericTile header="Certificaciones" subheader="Educación"
-                            frameType="OneByOne" press=".onBotonPress" data:key="educacion"
+                            frameType="TwoByHalf" press=".onBotonPress" data:key="educacion"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
                             <TileContent>
@@ -46,7 +46,7 @@
                         </GenericTile>
 
                         <GenericTile header="Historial laboral" subheader="Trayectoria"
-                            frameType="OneByOne" press=".onBotonPress" data:key="experiencia"
+                            frameType="TwoByHalf" press=".onBotonPress" data:key="experiencia"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
                             <TileContent>
@@ -55,7 +55,7 @@
                         </GenericTile>
 
                         <GenericTile header="Referencias" subheader="Contactos"
-                            frameType="OneByOne" press=".onBotonPress" data:key="contact"
+                            frameType="TwoByHalf" press=".onBotonPress" data:key="contact"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginBottom">
                             <TileContent>

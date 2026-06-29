@@ -1,0 +1,7 @@
+Resumen Profesional
+Tech Lead ABAP certificado con más de 20 años de experiencia en diseño, desarrollo, soporte y evolución de soluciones SAP en múltiples industrias, incluyendo minería, energía, retail, telecomunicaciones, salud, sector público y farmacéutica.
+Experiencia en entornos S/4HANA, con fuerte enfoque en integraciones SAP mediante OData, APIs REST, IDoc, RFC y Proxy, además de desarrollo backend para aplicaciones SAP Fiori utilizando CDS Views y OData Services.
+Amplia trayectoria en desarrollo ABAP avanzado, soporte y mantención SAP, participando en proyectos de implementación, migración y mejora continua. Experiencia liderando iniciativas técnicas, coordinando equipos ABAP y formando consultores trainee.
+Conocimientos en desarrollo sobre SAP HANA mediante CDS Views y AMDP (nivel intermedio), optimizando rendimiento y procesos de negocio en escenarios de alta volumetría.
+Experiencia funcional en módulos MM, SD, FI, CO, FICA, HCM, IS-U, CRM, BW, PM, QM, SRM, entre otros.
+________________________________________
