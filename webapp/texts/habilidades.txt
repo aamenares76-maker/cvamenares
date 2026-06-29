@@ -1,3 +1,20 @@
-Consultor SAP ABAP Senior S/4, certificado con más de 20 años de experiencia en diseño, desarrollo, soporte y evolución de soluciones SAP en múltiples industrias, incluyendo minería, energía, retail, telecomunicaciones, salud, sector público y farmacéutica.
-Amplia trayectoria en desarrollo ABAP avanzado, soporte y mantención SAP, participando en proyectos de implementación, migración y mejora continua. Experiencia liderando iniciativas técnicas, coordinando equipos ABAP y formando consultores trainee.
-Conocimientos en desarrollo sobre SAP HANA mediante CDS Views y AMDP (nivel intermedio), optimizando rendimiento y procesos de negocio en escenarios de alta volumetría.
+FORTALEZAS PROFESIONALES
+•	Liderazgo técnico y trabajo colaborativo 
+•	Orientación al usuario y resolución de problemas 
+•	Experiencia en integraciones SAP y S/4HANA 
+•	Capacidad de adaptación y aprendizaje continuo 
+•	Trabajo en equipos multidisciplinarios 
+________________________________________
+IDIOMAS
+•	Español: Nativo 
+•	Inglés: Nivel B1 (lectura técnica y comunicación funcional)
+
+________________________________________
+Competencias Técnicas
+•	Lenguaje / Framework: ABAP OO, ALV OO, Dynpro 
+•	S/4HANA & HANA: CDS Views, AMDP (nivel intermedio), Eclipse (ADT), ALV IDA 
+•	Integraciones: OData, APIs REST, IDoc, RFC, Proxy, Web Services 
+•	Extensibilidad: BAdI, User Exit, Enhancement Framework, BTE 
+•	Formularios: Smartforms, SAPscript, Adobe Forms 
+•	Datos & Migración: LSMW, Batch Input, Extractores, Data Migration, PANAYA
+•	Otros: VOFM, ATC, Performance Tuning 

@@ -2,3 +2,10 @@ Ingeniería de Ejecución Informática – Universidad de las Américas
 
 SAP Certified Development Associate – ABAP (NetWeaver 7.0)
 ID: 0006654739
+
+Curso ABAP for HANA / S/4HANA
+•	Base de datos HANA (primaria y secundaria) 
+•	CDS Views y procedimientos proxy 
+•	Búsquedas avanzadas 
+•	ALV Integrated Data Access 
+________________________________________

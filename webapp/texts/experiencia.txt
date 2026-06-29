@@ -1,2 +1,83 @@
 Experiencia en entornos S/4HANA, con fuerte enfoque en integraciones SAP mediante OData, APIs REST, IDoc, RFC y Proxy, además de desarrollo backend para aplicaciones SAP Fiori utilizando CDS Views y OData Services.
-Experiencia funcional en módulos MM, SD, FI, CO, FICA, HCM, IS-U, CRM, BW, PM, QM, SRM, entre otros.
+QHR Chile
+Consultor ABAP Sr. Freelance | Marzo 2026 – actualidad
+•	Apoyo reportes y tickets HCM.
+•	Mejora reportes usando AMDP.
+•	Generación de reportes distribución centro de costes y costo laboral empleados y obreros usando cluster de nomina.
+ 
+SQM Chile
+Consultor ABAP Sr. Freelance | Jul 2025 – Marzo 2026
+•	Reemplazo como líder frente AMS durante las vacaciones del consultor  a cargo, distribución tickets, apoyo técnico, coordinación con cliente . 
+•	Soporte y evolución de soluciones en módulos MM, SD, FI para negocios de Litio y Nitratos (Chile y operaciones internacionales). 
+•	Desarrollo e implementación de interfaces Proxy, Smartforms, controles de cambio en adobe forms según los requerimientos del cliente y reportes avanzados con AMDP sobre HANA, mejorando tiempos de procesamiento. 
+•	Intervengo procesos críticos de pedidos y entregas, aumentando estabilidad operativa. 
+•	Mentoría técnica a consultores junior, alineando desarrollos a buenas prácticas y Clean Core. 
+________________________________________
+Seidor Ecuador
+Consultor ABAP Sr. Freelance | May 2025 – Jun 2025
+•	Resolución de backlog crítico de tickets, asegurando continuidad operacional. 
+•	Continuidad de desarrollos e integraciones previamente implementadas. 
+Consultor ABAP Sr. Freelance | Nov 2024 – Feb 2025
+•	Soporte a cliente industria farmacéutica con foco en enhancements, BAPI, reportes OO y AMDP. 
+•	Diseño de interfaces XML para integración de datos mediante servicios. 
+•	Implementación de lógica VOFM y mejoras en arquitectura técnica. 
+________________________________________
+Aguas Andinas
+Consultor ABAP Sr. Freelance | Mar 2025 – Abr 2025
+•	Participación en proyecto de migración, desarrollando extractores Z y ampliaciones de extractores estándar. 
+•	Optimización de flujos de datos para reporting y analítica. 
+________________________________________
+SQM
+Consultor ABAP Sr. Freelance | Sep 2024 – Oct 2024
+•	Soporte en módulos logísticos y ventas, reduciendo backlog de incidencias. 
+•	Desarrollo de formularios, BAPIs, enhancements e interfaces, mejorando continuidad operativa. 
+________________________________________
+AS SpA (Cliente: Cencosud)
+Consultor ABAP Senior | May 2024 – Sep 2024
+•	Análisis y desarrollo de mejoras en proceso de contabilización de consignaciones y traslados. 
+•	Optimización de lógica financiera y trazabilidad de documentos. 
+________________________________________
+Setteny Consulting (Cliente: Derco Inchcape)
+Consultor ABAP Senior | Ene 2024 – Mar 2024
+•	Diseño e implementación de integraciones para Business Partner (BP) usando BAPI, alineado a arquitectura Clean Core. 
+•	Validación de calidad técnica mediante ATC, reduciendo riesgos de transporte. 
+________________________________________
+Bhive One
+Consultor ABAP Senior | Nov 2022 – Oct 2023
+Cliente: Volcán
+•	Desarrollo de soluciones OO para integración con Wherex, automatizando procesos de compras. 
+Cliente: SALFA
+•	Implementación de servicios OData y CDS para monitoreo de tickets en entorno S/4HANA. 
+•	Desarrollo de reportes OO y servicios RFC para contratos y activos. 
+Otros clientes: Aguas Nuevas, Indumotora, Ventisqueros, Aceros Arequipa
+•	Desarrollo de interfaces, formularios y soluciones específicas de negocio. 
+•	controles de cambio en adobe-forms según los requerimientos del cliente.
+________________________________________
+Polosur Consultores
+Consultor ABAP Senior | Nov 2015 – Oct 2022
+•	Liderazgo técnico en múltiples proyectos SAP en industrias como energía, salud, retail y minería. 
+•	Diseño de integraciones complejas (SAP – SNOW, SOLMAN, ALFRESCO, Web Services). 
+•	Desarrollo sobre HANA (AMDP, ODS, CDS) y soluciones BW. 
+•	Implementación de mejoras en FI, MM, SD, HCM, ISU, FICA. 
+•	Participación en estimaciones, arquitectura y propuestas técnicas. 
+Clientes destacados: COPEC, ACHS, CBB, ARAUCO, SMU, CORFO, SQM, entre otros.
+________________________________________
+Consultor Freelance (IBM, INDRA, Genesys, etc.)
+Mar 2012 – Nov 2015
+•	Participación en proyectos de upgrade SAP (PANAYA, SPAU/SPDD, OSS Notes). 
+•	Desarrollo de soluciones en FI, MM, SD, ISH, BW, FICA. 
+•	Liderazgo técnico en migraciones y automatización de procesos. 
+________________________________________
+Actualisap Chile
+Consultor ABAP Senior | Dic 2008 – Dic 2011
+•	Desarrollo de estándares ABAP y formación de consultores. 
+•	Participación en múltiples proyectos de implementación y soporte. 
+________________________________________
+Soluziona Chile
+Consultor ABAP | Dic 2004 – Dic 2008
+•	Participación en upgrade SAP y desarrollos en MM, SD, FI, CO. 
+•	Desarrollo de interfaces, formularios y cargas iniciales.
+Educación y Certificaciones
+Ingeniería de Ejecución Informática – Universidad de las Américas
+SAP Certified Development Associate – ABAP
+
