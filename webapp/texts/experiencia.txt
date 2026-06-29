@@ -1,6 +1,5 @@
-Experiencia en entornos S/4HANA, con fuerte enfoque en integraciones SAP mediante OData, APIs REST, IDoc, RFC y Proxy, además de desarrollo backend para aplicaciones SAP Fiori utilizando CDS Views y OData Services.
 QHR Chile
-Consultor ABAP Sr. Freelance | Marzo 2026 – actualidad
+Consultor ABAP Sr. Freelance | Marzo 2026 – Mayo 2026
 •	Apoyo reportes y tickets HCM.
 •	Mejora reportes usando AMDP.
 •	Generación de reportes distribución centro de costes y costo laboral empleados y obreros usando cluster de nomina.
