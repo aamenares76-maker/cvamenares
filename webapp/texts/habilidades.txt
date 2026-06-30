@@ -1,4 +1,5 @@
 Fortalezas Profesionales
+
 •	Liderazgo técnico y trabajo colaborativo 
 •	Orientación al usuario y resolución de problemas 
 •	Experiencia en integraciones SAP y S/4HANA 
@@ -6,13 +7,15 @@ Fortalezas Profesionales
 •	Trabajo en equipos multidisciplinarios 
 ________________________________________
 
-IDIOMAS
+Idiomas
+
 •	Español: Nativo 
 •	Inglés: Nivel B1 (lectura técnica y comunicación funcional)
 
 ________________________________________
 
 Competencias Técnicas
+
 •	Lenguaje / Framework: ABAP OO, ALV OO, Dynpro 
 •	S/4HANA & HANA: CDS Views, AMDP (nivel intermedio), Eclipse (ADT), ALV IDA 
 •	Integraciones: OData, APIs REST, IDoc, RFC, Proxy, Web Services 

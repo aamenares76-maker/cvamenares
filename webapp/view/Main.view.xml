@@ -1,9 +1,9 @@
 <mvc:View controllerName="com.test.cvamenares.controller.Main"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" > <!-- title="{i18n>title}">-->
+    <Page id="page" > <!-- title="{i18n>title}"> -->
         <content>
-            <HBox class="sapUiMediumMargin">
+            <HBox class="sapUiTinyMargin">
 
                 <!-- Columna izquierda -->
                 <VBox width="400px" class="sapUiSmallMarginEnd">
@@ -24,7 +24,7 @@
                             </TileContent>
                         </GenericTile>
 
-                        <GenericTile header="FORTALEZAS" subheader=""
+                        <GenericTile header="Fortalezas" subheader=""
                             frameType="TwoByHalf" press=".onBotonPress" data:key="habilidades"
                             xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
                             class="sapUiSmallMarginBottom">
