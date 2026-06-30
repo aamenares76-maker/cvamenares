@@ -1,4 +1,5 @@
 Resumen Profesional
+
 •	Tech Lead ABAP certificado con más de 20 años de experiencia en diseño, desarrollo, soporte y evolución de soluciones SAP en múltiples industrias, incluyendo minería, energía, retail, telecomunicaciones, salud, sector público y farmacéutica.
 
 •	Experiencia en entornos S/4HANA, con fuerte enfoque en integraciones SAP mediante OData, APIs REST, IDoc, RFC y Proxy, además de desarrollo backend para aplicaciones SAP Fiori utilizando CDS Views y OData Services.
@@ -8,6 +9,4 @@ Resumen Profesional
 •	Conocimientos en desarrollo sobre SAP HANA mediante CDS Views y AMDP (nivel intermedio), optimizando rendimiento y procesos de negocio en escenarios de alta volumetría.
 
 •	Experiencia funcional en módulos MM, SD, FI, CO, FICA, HCM, IS-U, CRM, BW, PM, QM, SRM, entre otros.
-git add .
-git commit -m "layout dos columnas + tiles TwoByHalf"
-git push________________________________________
+________________________________________
