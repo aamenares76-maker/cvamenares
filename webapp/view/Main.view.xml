@@ -68,9 +68,38 @@
 
                 <!-- Columna derecha: Panel contenido -->
                 <VBox width="600px">
-                    <Panel id="infoPanel" headerText="{/titulo}" height="500px">
+                <!--    <Panel id="infoPanel" headerText="{/titulo}" height="500px">
                         <Text text="{/contenido}" class="sapUiSmallMargin"/>
-                    </Panel>
+                    </Panel> -->
+                <!-- Panel de contenido (texto o tabla según corresponda) -->
+<!-- Panel de contenido (texto o tabla según corresponda) -->
+<Panel id="infoPanel" headerText="{/titulo}" height="500px">
+
+    <!-- Texto normal: visible cuando mostrarTabla = false -->
+    <Text text="{/contenido}" class="sapUiSmallMargin"
+        visible="{= !${/mostrarTabla} }"/>
+
+    <!-- Tabla de referencias: visible cuando mostrarTabla = true -->
+    <Table items="{/referencias}" visible="{/mostrarTabla}">
+        <columns>
+            <Column><Text text="Nombre"/></Column>
+            <Column><Text text="Cargo"/></Column>
+            <Column><Text text="Email"/></Column>
+            <Column><Text text="Teléfono"/></Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{nombre}"/>
+                    <Text text="{cargo}"/>
+                    <Text text="{email}"/>
+                    <Text text="{telefono}"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+</Panel>
                 </VBox>
 
             </HBox>

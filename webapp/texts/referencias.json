@@ -1,0 +1,34 @@
+{
+    "referencias": [
+        {
+            "nombre": "Jorge Galleguillos",
+            "cargo": "Líder Coordinador Técnico de los frentes de AMS de SQM",
+            "email": "jorge.andres.faundez@accenture.com",
+            "telefono": "+56 9 7588 4477"
+        },
+        {
+            "nombre": "Alberto Erazo Pavez",
+            "cargo": "Gerente de Operaciones, Bhive One",
+            "email": "aerazo@bhive.one",
+            "telefono": "+56 9 9799 1673"
+        },
+        {
+            "nombre": "Daniel Ruiz Cortés",
+            "cargo": "Líder de Tecnología e Innovación SAP, Bhive One",
+            "email": "druiz@bhive.one",
+            "telefono": ""
+        },
+        {
+            "nombre": "Daniel Caamaño",
+            "cargo": "Gerente general Prime Group",
+            "email": "Dcaamano@primegroup.cl",
+            "telefono": ""
+        },
+        {
+            "nombre": "Ricardo Gamonal",
+            "cargo": "Gerente consultoría y socio fundador, Polosur consultores",
+            "email": "ricardo.gamonal@polosur.cl",
+            "telefono": "+56 9 9699 9709"
+        }
+    ]
+}
