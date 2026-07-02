@@ -38,11 +38,11 @@ sap.ui.define([
                 habilidades: "Fortalezas",
                 educacion: "Certificaciones",
                 experiencia: "Historial laboral",
-                contact: "Referencias"
+                contactos: "Referencias"
             };
 
             // CASO ESPECIAL: Referencias se muestra como TABLA (desde JSON)
-            if (sKey === "contact") {
+            if (sKey === "contactos") {
                 fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/referencias.json")
                     .then(function (response) {
                         return response.json(); // parsea el JSON a objeto JS
