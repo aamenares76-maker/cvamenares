@@ -8,14 +8,12 @@ sap.ui.define([
 
         // Se ejecuta al cargar la vista por primera vez
         onInit: function () {
-
-            // Modelo de datos local (JSON) que alimenta toda la vista vía binding
             var oModel = new JSONModel({
-                titulo: "Selecciona una sección",       // título del panel derecho
-                contenido: "Pulsa un botón para ver la información.", // texto del panel derecho
-                resumen: "",                              // texto del panel "Datos Contacto"
-                mostrarTabla: false,                      // controla si se muestra Texto o Tabla
-                referencias: []                           // datos de la tabla de referencias
+                titulo: "Selecciona una sección",
+                contenido: "Pulsa un botón para ver la información.",
+                resumen: "",
+                mostrarTabla: false,
+                referencias: []
             });
             this.getView().setModel(oModel);
 
@@ -27,12 +25,10 @@ sap.ui.define([
 
         // Se ejecuta cada vez que el usuario presiona un GenericTile
         onBotonPress: function (oEvent) {
-            // Obtiene el "key" definido en data:key del tile presionado
-            // Ej: data:key="experiencia" -> sKey = "experiencia"
             var sKey = oEvent.getSource().data("key");
             var oModel = this.getView().getModel();
+            var that = this; // guardamos referencia a "this" para usarla dentro del .then
 
-            // Diccionario: key del tile -> título a mostrar en el panel
             var mTitulos = {
                 res_prof: "Resumen Profesional",
                 habilidades: "Fortalezas",
@@ -41,16 +37,25 @@ sap.ui.define([
                 contactos: "Referencias"
             };
 
+            // Función para hacer scroll al panel de contenido
+            var fnScroll = function () {
+                var oPanel = that.byId("infoPanel");
+                if (oPanel && oPanel.getDomRef()) {
+                    oPanel.getDomRef().scrollIntoView({ behavior: "smooth" });
+                }
+            };
+
             // CASO ESPECIAL: Referencias se muestra como TABLA (desde JSON)
             if (sKey === "contactos") {
                 fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/referencias.json")
                     .then(function (response) {
-                        return response.json(); // parsea el JSON a objeto JS
+                        return response.json();
                     })
                     .then(function (oData) {
-                        oModel.setProperty("/referencias", oData.referencias); // llena la tabla
-                        oModel.setProperty("/mostrarTabla", true);              // muestra tabla, oculta texto
+                        oModel.setProperty("/referencias", oData.referencias);
+                        oModel.setProperty("/mostrarTabla", true);
                         oModel.setProperty("/titulo", mTitulos[sKey]);
+                        fnScroll(); // scroll al panel
                     })
                     .catch(function () {
                         oModel.setProperty("/titulo", mTitulos[sKey]);
@@ -60,7 +65,7 @@ sap.ui.define([
 
             // CASO NORMAL: el resto de los tiles se muestra como TEXTO (desde .txt)
             } else {
-                oModel.setProperty("/mostrarTabla", false); // oculta tabla, muestra texto
+                oModel.setProperty("/mostrarTabla", false);
 
                 fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/" + sKey + ".txt")
                     .then(function (response) {
@@ -69,6 +74,7 @@ sap.ui.define([
                     .then(function (sTexto) {
                         oModel.setProperty("/titulo", mTitulos[sKey]);
                         oModel.setProperty("/contenido", sTexto);
+                        fnScroll(); // scroll al panel
                     })
                     .catch(function () {
                         oModel.setProperty("/titulo", mTitulos[sKey]);

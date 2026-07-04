@@ -76,7 +76,4 @@ Soluziona Chile
 Consultor ABAP | Dic 2004 – Dic 2008
 •	Participación en upgrade SAP y desarrollos en MM, SD, FI, CO. 
 •	Desarrollo de interfaces, formularios y cargas iniciales.
-Educación y Certificaciones
-Ingeniería de Ejecución Informática – Universidad de las Américas
-SAP Certified Development Associate – ABAP
 
