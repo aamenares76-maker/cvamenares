@@ -5,12 +5,6 @@ Fortalezas Profesionales
 •	Experiencia en integraciones SAP y S/4HANA 
 •	Capacidad de adaptación y aprendizaje continuo 
 •	Trabajo en equipos multidisciplinarios 
-________________________________________
-
-Idiomas
-
-•	Español: Nativo 
-•	Inglés: Nivel B1 (lectura técnica y comunicación funcional)
 
 ________________________________________
 
@@ -23,3 +17,9 @@ Competencias Técnicas
 •	Formularios: Smartforms, SAPscript, Adobe Forms 
 •	Datos & Migración: LSMW, Batch Input, Extractores, Data Migration, PANAYA
 •	Otros: VOFM, ATC, Performance Tuning 
+________________________________________
+
+Idiomas
+
+•	Español: Nativo 
+•	Inglés: Nivel B1 (lectura técnica y comunicación funcional)
