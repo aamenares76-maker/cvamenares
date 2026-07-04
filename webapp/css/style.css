@@ -1,1 +1,15 @@
 /* Enter your custom styles here */
+/* Responsive: en mobile apilar columnas verticalmente */
+@media (max-width: 768px) {
+    .cvLayout {
+        flex-direction: column !important;
+    }
+    .cvLayout > div {
+        width: 100% !important;
+    }
+}
+
+.cvTextJustified {
+    text-align: justify;
+    width: 100%;
+}
