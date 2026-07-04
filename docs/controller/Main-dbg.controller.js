@@ -37,13 +37,15 @@ sap.ui.define([
                 contactos: "Referencias"
             };
 
-            // Función para hacer scroll al panel de contenido
-            var fnScroll = function () {
-                var oPanel = that.byId("infoPanel");
-                if (oPanel && oPanel.getDomRef()) {
-                    oPanel.getDomRef().scrollIntoView({ behavior: "smooth" });
-                }
-            };
+// Función para hacer scroll al panel de contenido
+var fnScroll = function () {
+    setTimeout(function() {
+        var oPanel = that.byId("infoPanel");
+        if (oPanel && oPanel.getDomRef()) {
+            oPanel.getDomRef().scrollIntoView({ behavior: "smooth" });
+        }
+    }, 300); // espera 300ms para que UI5 termine de renderizar
+};
 
             // CASO ESPECIAL: Referencias se muestra como TABLA (desde JSON)
             if (sKey === "contactos") {
