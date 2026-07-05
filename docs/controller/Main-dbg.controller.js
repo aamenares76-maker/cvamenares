@@ -83,6 +83,14 @@ var fnScroll = function () {
                         oModel.setProperty("/contenido", "No se pudo cargar el contenido.");
                     });
             }
+        },
+                // Descarga el PDF del CV
+        onDescargarPDF: function () {
+            var sUrl = sap.ui.require.toUrl("com/test/cvamenares") + "/texts/CV_Andres_Menares_Senior_ABAP_2026.pdf";
+            var oLink = document.createElement("a");
+            oLink.href = sUrl;
+            oLink.download = "CV_Andres_Menares_Senior_ABAP_2026.pdf";
+            oLink.click();
         }
 
     });

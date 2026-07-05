@@ -12,7 +12,13 @@
                     <Panel id="infoPanel_resumen" headerText="Datos Contacto" class="sapUiSmallMarginBottom">
                         <Text text="{/resumen}" class="sapUiSmallMargin"/>
                     </Panel>
-
+                    <!-- Botón descarga PDF -->
+                <Button
+                        text="Descargar CV (PDF)"
+                        icon="sap-icon://download"
+                        type="Emphasized"
+                        press=".onDescargarPDF"
+                        class="sapUiSmallMarginBottom sapUiSmallMarginTop"/>
                     <!-- Fila 1: 2 tiles -->
                     <HBox justifyContent="Start" wrap="Wrap" class="sapUiSmallMarginBottom">
                         <GenericTile header="Resumen Profesional" subheader="Resumen"
