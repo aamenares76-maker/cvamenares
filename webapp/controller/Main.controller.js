@@ -33,7 +33,7 @@ sap.ui.define([
         },
 
         _leer: function (sArchivo) {
-            return fetch(this._url(sArchivo)).then(function (oResp) {
+            return fetch(this._url(sArchivo), { cache: "no-cache" }).then(function (oResp) {
                 return oResp.text();
             });
         },
