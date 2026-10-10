@@ -1,15 +1,15 @@
 IBM - CGE
 Consultor ABAP Sr. Freelance | Junio 2026 - Septiembre 2026
 Proyecto CGE Upgrade de Sistema a EHP8
-•  Ejecutar el ajuste técnico post-upgrade (SPDD/SPAU) en los ambientes del proyecto,
+•    Ejecutar el ajuste técnico post-upgrade (SPDD/SPAU) en los ambientes del proyecto,
 revisando objetos estándar y desarrollos Z/Y afectados por la actualización a EHP8.
-•  Resolver incidencias de compatibilidad en objetos custom generados por el upgrade,
+•    Resolver incidencias de compatibilidad en objetos custom generados por el upgrade,
 asegurando continuidad de los procesos críticos.
-•  Gestionar el mantenimiento dual entre el sistema legado (EHP6/kernel 731) y el nuevo
+•    Gestionar el mantenimiento dual entre el sistema legado (EHP6/kernel 731) y el nuevo
 ambiente EHP8 durante la ventana de convivencia.
-•  Administrar la gestión de transportes (STMS) entre ambientes, garantizando trazabilidad
+•    Administrar la gestión de transportes (STMS) entre ambientes, garantizando trazabilidad
 y consistencia durante todo el ciclo de upgrade.
-•  Usando PANAYA por el lado funcional.
+•    Usando PANAYA por el lado funcional.
 
 QHR Chile
 Consultor ABAP Sr. Freelance | Marzo 2026 – Mayo 2026
