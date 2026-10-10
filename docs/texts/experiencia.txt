@@ -1,4 +1,4 @@
-IBM - CGE 2026
+IBM - CGE
 Consultor ABAP Sr. Freelance | Junio 2026 - Septiembre 2026
 Proyecto CGE Upgrade de Sistema a EHP8
 •  Ejecutar el ajuste técnico post-upgrade (SPDD/SPAU) en los ambientes del proyecto,
