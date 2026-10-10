@@ -1,109 +1,61 @@
 <mvc:View controllerName="com.test.cvamenares.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page">
-        <content>
-            <FlexBox wrap="Wrap" class="sapUiTinyMargin">
-
-                <!-- Columna izquierda -->
-                <VBox width="400px" class="sapUiSmallMarginEnd">
-
-                    <!-- Panel Contacto -->
-                    <Panel id="infoPanel_resumen" headerText="Datos Contacto" class="sapUiSmallMarginBottom">
-                        <Text text="{/resumen}" class="sapUiSmallMargin"/>
-                    </Panel>
-                    <!-- Botón descarga PDF -->
-                <Button
-                        text="Descargar CV (PDF)"
-                        icon="sap-icon://download"
-                        type="Emphasized"
-                        press=".onDescargarPDF"
-                        class="sapUiSmallMarginBottom sapUiSmallMarginTop"/>
-                    <!-- Fila 1: 2 tiles -->
-                    <HBox justifyContent="Start" wrap="Wrap" class="sapUiSmallMarginBottom">
-                        <GenericTile header="Resumen Profesional" subheader="Resumen"
-                            frameType="TwoByHalf" press=".onBotonPress" data:key="res_prof"
-                            xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-                            class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
-                            <TileContent>
-                                <ImageContent src="sap-icon://activity-individual"/>
-                            </TileContent>
-                        </GenericTile>
-
-                        <GenericTile header="Fortalezas" subheader=""
-                            frameType="TwoByHalf" press=".onBotonPress" data:key="habilidades"
-                            xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-                            class="sapUiSmallMarginBottom">
-                            <TileContent>
-                                <ImageContent src="sap-icon://learning-assistant"/>
-                            </TileContent>
-                        </GenericTile>
-                    </HBox>
-
-                    <!-- Fila 2: 3 tiles -->
-                    <HBox justifyContent="Start" wrap="Wrap" class="sapUiSmallMarginBottom">
-                        <GenericTile header="Certificaciones" subheader="Educación"
-                            frameType="TwoByHalf" press=".onBotonPress" data:key="educacion"
-                            xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-                            class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
-                            <TileContent>
-                                <ImageContent src="sap-icon://contacts"/>
-                            </TileContent>
-                        </GenericTile>
-
-                        <GenericTile header="Historial laboral" subheader="Trayectoria"
-                            frameType="TwoByHalf" press=".onBotonPress" data:key="experiencia"
-                            xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-                            class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
-                            <TileContent>
-                                <ImageContent src="sap-icon://education"/>
-                            </TileContent>
-                        </GenericTile>
-
-                        <GenericTile header="Referencias" subheader="Contactos"
-                            frameType="TwoByHalf" press=".onBotonPress" data:key="contactos"
-                            xmlns:data="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-                            class="sapUiSmallMarginBottom">
-                            <TileContent>
-                                <ImageContent src="sap-icon://person-placeholder"/>
-                            </TileContent>
-                        </GenericTile>
-                    </HBox>
-
-                </VBox>
-
-                <!-- Columna derecha: Panel contenido -->
-                <VBox width="600px">
-                    <Panel id="infoPanel" headerText="{/titulo}" height="500px">
-
-                        <!-- Texto normal: visible cuando mostrarTabla = false -->
-                        <Text text="{/contenido}" class="sapUiSmallMargin"
-                            visible="{= !${/mostrarTabla} }"/>
-
-                        <!-- Tabla de referencias: visible cuando mostrarTabla = true -->
-                        <Table items="{/referencias}" visible="{/mostrarTabla}">
-                            <columns>
-                                <Column><Text text="Nombre"/></Column>
-                                <Column><Text text="Cargo"/></Column>
-                                <Column><Text text="Email"/></Column>
-                                <Column><Text text="Teléfono"/></Column>
-                            </columns>
-                            <items>
-                                <ColumnListItem>
-                                    <cells>
-                                        <Text text="{nombre}"/>
-                                        <Text text="{cargo}"/>
-                                        <Text text="{email}"/>
-                                        <Text text="{telefono}"/>
-                                    </cells>
-                                </ColumnListItem>
-                            </items>
-                        </Table>
-
-                    </Panel>
-                </VBox>
-
-            </FlexBox>
-        </content>
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" displayBlock="true">
+    <Page showHeader="false" enableScrolling="true">
+        <FlexBox wrap="Wrap" class="cvLayout">
+            <VBox class="cvSide">
+                <layoutData>
+                    <FlexItemData baseSize="20rem" growFactor="0" shrinkFactor="0"/>
+                </layoutData>
+                <Panel headerText="Datos Contacto">
+                    <Text text="{view>/contacto}" renderWhitespace="true"/>
+                </Panel>
+                <Button text="Descargar CV (PDF)" icon="sap-icon://download" type="Emphasized"
+                    press=".onDescargar" class="cvBtnPdf"/>
+                <FlexBox wrap="Wrap" class="cvTiles">
+                    <GenericTile header="Resumen Profesional" mode="IconMode" frameType="TwoByHalf"
+                        tileIcon="sap-icon://notes" press=".onTile" class="cvTile">
+                        <customData><core:CustomData key="file" value="res_prof.txt"/></customData>
+                    </GenericTile>
+                    <GenericTile header="Fortalezas" mode="IconMode" frameType="TwoByHalf"
+                        tileIcon="sap-icon://favorite" press=".onTile" class="cvTile">
+                        <customData><core:CustomData key="file" value="habilidades.txt"/></customData>
+                    </GenericTile>
+                    <GenericTile header="Certificaciones" mode="IconMode" frameType="TwoByHalf"
+                        tileIcon="sap-icon://education" press=".onTile" class="cvTile">
+                        <customData><core:CustomData key="file" value="educacion.txt"/></customData>
+                    </GenericTile>
+                    <GenericTile header="Historial laboral" mode="IconMode" frameType="TwoByHalf"
+                        tileIcon="sap-icon://history" press=".onTile" class="cvTile">
+                        <customData><core:CustomData key="file" value="experiencia.txt"/></customData>
+                    </GenericTile>
+                    <GenericTile header="Referencias" mode="IconMode" frameType="TwoByHalf"
+                        tileIcon="sap-icon://group" press=".onTile" class="cvTile">
+                        <customData><core:CustomData key="file" value="referencias.json"/></customData>
+                    </GenericTile>
+                </FlexBox>
+            </VBox>
+            <Panel id="panelContenido" headerText="{view>/titulo}" class="cvMain">
+                <layoutData>
+                    <FlexItemData baseSize="24rem" growFactor="1" minWidth="0"/>
+                </layoutData>
+                <Text text="{view>/texto}" renderWhitespace="true" visible="{view>/esTexto}"/>
+                <Table items="{view>/referencias}" visible="{view>/esTabla}">
+                    <columns>
+                        <Column><Text text="Nombre"/></Column>
+                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Cargo"/></Column>
+                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Email"/></Column>
+                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Teléfono"/></Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <Text text="{view>nombre}"/>
+                            <Text text="{view>cargo}"/>
+                            <Text text="{view>email}"/>
+                            <Text text="{view>telefono}"/>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </Panel>
+        </FlexBox>
     </Page>
 </mvc:View>

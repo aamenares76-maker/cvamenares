@@ -4,94 +4,82 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
     "use strict";
 
+    var NS = "com/test/cvamenares/texts/";
+
     return Controller.extend("com.test.cvamenares.controller.Main", {
 
-        // Se ejecuta al cargar la vista por primera vez
         onInit: function () {
             var oModel = new JSONModel({
-                titulo: "Selecciona una sección",
-                contenido: "Pulsa un botón para ver la información.",
-                resumen: "",
-                mostrarTabla: false,
+                contacto: "",
+                titulo: "Resumen Profesional",
+                texto: "",
+                esTexto: true,
+                esTabla: false,
                 referencias: []
             });
-            this.getView().setModel(oModel);
+            this.getView().setModel(oModel, "view");
 
-            // Cargar el texto de "Datos Contacto" automáticamente al iniciar la app
-            fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/resumen.txt")
-                .then(r => r.text())
-                .then(texto => oModel.setProperty("/resumen", texto));
+            this._leer("resumen.txt").then(function (sTexto) {
+                oModel.setProperty("/contacto", sTexto);
+            });
+
+            this._leer("res_prof.txt").then(function (sTexto) {
+                oModel.setProperty("/texto", sTexto);
+            });
         },
 
-        // Se ejecuta cada vez que el usuario presiona un GenericTile
-        onBotonPress: function (oEvent) {
-            var sKey = oEvent.getSource().data("key");
-            var oModel = this.getView().getModel();
-            var that = this; // guardamos referencia a "this" para usarla dentro del .then
+        _url: function (sArchivo) {
+            return sap.ui.require.toUrl(NS + sArchivo);
+        },
 
-            var mTitulos = {
-                res_prof: "Resumen Profesional",
-                habilidades: "Fortalezas",
-                educacion: "Certificaciones",
-                experiencia: "Historial laboral",
-                contactos: "Referencias"
-            };
+        _leer: function (sArchivo) {
+            return fetch(this._url(sArchivo)).then(function (oResp) {
+                return oResp.text();
+            });
+        },
 
-// Función para hacer scroll al panel de contenido
-var fnScroll = function () {
-    setTimeout(function() {
-        var oPanel = that.byId("infoPanel");
-        if (oPanel && oPanel.getDomRef()) {
-            oPanel.getDomRef().scrollIntoView({ behavior: "smooth" });
-        }
-    }, 300); // espera 300ms para que UI5 termine de renderizar
-};
+        // Solo en celular: baja hasta el panel de contenido
+        _irAlContenido: function () {
+            if (!window.matchMedia("(max-width: 600px)").matches) {
+                return;
+            }
+            var oPanel = this.byId("panelContenido");
+            // pequeña espera para que UI5 termine de pintar el texto nuevo
+            setTimeout(function () {
+                var oDom = oPanel && oPanel.getDomRef();
+                if (oDom) {
+                    oDom.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }, 100);
+        },
 
-            // CASO ESPECIAL: Referencias se muestra como TABLA (desde JSON)
-            if (sKey === "contactos") {
-                fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/referencias.json")
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (oData) {
-                        oModel.setProperty("/referencias", oData.referencias);
-                        oModel.setProperty("/mostrarTabla", true);
-                        oModel.setProperty("/titulo", mTitulos[sKey]);
-                        fnScroll(); // scroll al panel
-                    })
-                    .catch(function () {
-                        oModel.setProperty("/titulo", mTitulos[sKey]);
-                        oModel.setProperty("/contenido", "No se pudo cargar las referencias.");
-                        oModel.setProperty("/mostrarTabla", false);
-                    });
+        onTile: function (oEvent) {
+            var oTile = oEvent.getSource();
+            var sArchivo = oTile.data("file");
+            var oModel = this.getView().getModel("view");
+            var that = this;
 
-            // CASO NORMAL: el resto de los tiles se muestra como TEXTO (desde .txt)
+            oModel.setProperty("/titulo", oTile.getHeader());
+
+            if (sArchivo.endsWith(".json")) {
+                this._leer(sArchivo).then(function (sJson) {
+                    oModel.setProperty("/referencias", JSON.parse(sJson).referencias);
+                    oModel.setProperty("/esTexto", false);
+                    oModel.setProperty("/esTabla", true);
+                    that._irAlContenido();
+                });
             } else {
-                oModel.setProperty("/mostrarTabla", false);
-
-                fetch(sap.ui.require.toUrl("com/test/cvamenares") + "/texts/" + sKey + ".txt")
-                    .then(function (response) {
-                        return response.text();
-                    })
-                    .then(function (sTexto) {
-                        oModel.setProperty("/titulo", mTitulos[sKey]);
-                        oModel.setProperty("/contenido", sTexto);
-                        fnScroll(); // scroll al panel
-                    })
-                    .catch(function () {
-                        oModel.setProperty("/titulo", mTitulos[sKey]);
-                        oModel.setProperty("/contenido", "No se pudo cargar el contenido.");
-                    });
+                this._leer(sArchivo).then(function (sTexto) {
+                    oModel.setProperty("/texto", sTexto);
+                    oModel.setProperty("/esTexto", true);
+                    oModel.setProperty("/esTabla", false);
+                    that._irAlContenido();
+                });
             }
         },
-                // Descarga el PDF del CV
-        onDescargarPDF: function () {
-            var sUrl = sap.ui.require.toUrl("com/test/cvamenares") + "/texts/CV_Andres_Menares_Senior_ABAP_2026.pdf";
-            var oLink = document.createElement("a");
-            oLink.href = sUrl;
-            oLink.download = "CV_Andres_Menares_Senior_ABAP_2026.pdf";
-            oLink.click();
-        }
 
+        onDescargar: function () {
+            window.open(this._url("CV_Andres_Menares_Senior_ABAP_2026.pdf"), "_blank");
+        }
     });
 });

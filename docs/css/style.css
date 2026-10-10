@@ -1,15 +1,56 @@
-/* Enter your custom styles here */
-/* Responsive: en mobile apilar columnas verticalmente */
-@media (max-width: 768px) {
-    .cvLayout {
-        flex-direction: column !important;
+.cvLayout {
+    padding: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.cvSide {
+    width: 20rem;
+}
+
+.cvMain {
+    min-width: 0;
+}
+
+.cvBtnPdf {
+    margin: 0.75rem 0;
+}
+
+/* Tiles alargados: una columna, uno debajo del otro */
+.cvTiles {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.cvTile.sapMGT {
+    width: 100% !important;
+    height: 4rem !important;
+    margin: 0 !important;
+}
+
+/* Solo PC / tablet: panel de contenido más compacto */
+@media (min-width: 601px) {
+    .cvMain {
+        max-width: 55rem;
     }
-    .cvLayout > div {
-        width: 100% !important;
+    .cvMain > .sapMPanelContent {
+        max-height: 75vh;
+        overflow-y: auto;
     }
 }
 
-.cvTextJustified {
-    text-align: justify;
-    width: 100%;
+/* Celular */
+@media (max-width: 600px) {
+    .cvLayout {
+        padding: 0.5rem;
+    }
+    .cvLayout > .sapMFlexItem {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+    }
+    .cvSide {
+        width: 100%;
+    }
 }
