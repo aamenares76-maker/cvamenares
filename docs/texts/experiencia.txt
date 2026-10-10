@@ -1,3 +1,16 @@
+IBM - CGE
+Consultor ABAP Sr. Freelance | Junio 2026 - Septiembre 2026
+Proyecto CGE Upgrade de Sistema a EHP8
+• Ejecutar el ajuste técnico post-upgrade (SPDD/SPAU) en los ambientes del proyecto,
+revisando objetos estándar y desarrollos Z/Y afectados por la actualización a EHP8.
+• Resolver incidencias de compatibilidad en objetos custom generados por el upgrade,
+asegurando continuidad de los procesos críticos.
+• Gestionar el mantenimiento dual entre el sistema legado (EHP6/kernel 731) y el nuevo
+ambiente EHP8 durante la ventana de convivencia.
+• Administrar la gestión de transportes (STMS) entre ambientes, garantizando trazabilidad
+y consistencia durante todo el ciclo de upgrade.
+• Usando PANAYA por el lado funcional.
+
 QHR Chile
 Consultor ABAP Sr. Freelance | Marzo 2026 – Mayo 2026
 •	Apoyo reportes y tickets HCM.
@@ -5,7 +18,7 @@ Consultor ABAP Sr. Freelance | Marzo 2026 – Mayo 2026
 •	Generación de reportes distribución centro de costes y costo laboral empleados y obreros usando cluster de nomina.
  
 SQM Chile
-Consultor ABAP Sr. Freelance | Jul 2025 – Marzo 2026
+Consultor ABAP Sr. Freelance | Jul 2025 – abril 2026
 •	Reemplazo como líder frente AMS durante las vacaciones del consultor  a cargo, distribución tickets, apoyo técnico, coordinación con cliente . 
 •	Soporte y evolución de soluciones en módulos MM, SD, FI para negocios de Litio y Nitratos (Chile y operaciones internacionales). 
 •	Desarrollo e implementación de interfaces Proxy, Smartforms, controles de cambio en adobe forms según los requerimientos del cliente y reportes avanzados con AMDP sobre HANA, mejorando tiempos de procesamiento. 
